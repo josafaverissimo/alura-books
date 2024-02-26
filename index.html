@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>AluraBooks</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__button">
+            <label for="menu">
+                <span class="cabecalho__menuHamburger container__image"></span>
+            </label>
+            <ul class="container__menuList">
+                <li class="container__menuList__title">Categorias</li>
+                <li class="container__menuList__item">
+                    <a href="#" class="container__menuList__item__link">
+                        Programação
+                    </a>
+                </li>
+                <li class="container__menuList__item">
+                    <a href="#" class="container__menuList__item__link">
+                        Front-end
+                    </a>
+                </li>
+                <li class="container__menuList__item">
+                    <a href="#" class="container__menuList__item__link">
+                        Infraestrutura
+                    </a>
+                </li>
+                <li class="container__menuList__item">
+                    <a href="#" class="container__menuList__item__link">
+                        Business
+                    </a>
+                </li>
+                <li class="container__menuList__item">
+                    <a href="#" class="container__menuList__item__link">
+                        Design & UX
+                    </a>
+                </li>
+            </ul>
+            <img src="./assets/images/Logo.svg" alt="Logo da AluraBooks">
+        </div>
+
+        <div class="container">
+            <a href="#"><img src="./assets/images/Favoritos.svg" alt="Meus favoritos" class="container__image"></a>
+            <a href="#"><img src="./assets/images/Compras.svg" alt="Carrinhos de compras" class="container__image"></a>
+            <a href="#"><img src="./assets/images/Usuario.svg" alt="Meu perfil" class="container__image"></a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2 class="banner__title">Já sabe por onde começar?</h2>
+        <p class="banner__text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__search" placeholder="Qual será sua próxima leitura?">
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__title">Novos lançamentos</h2>
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./assets/images/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/Liderança.svg" alt="Livro de liderança">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/Javascript.svg" alt="Livro de javascript">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/Guia%20Front-end.svg" alt="Livro de frontend">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/Portugol.svg" alt="Livro de portugol">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/Acessibilidade.svg" alt="Livro de acessibilidade">
+                </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets'
+                }
+            })
+        </script>
+    </footer>
+</body>
+</html>
