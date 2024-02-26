@@ -1,0 +1,59 @@
+.cabecalho {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1em;
+
+    & > .container {
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+
+        .cabecalho__menuHamburger {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-image: url('../images/Menu.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .cabecalho__image {
+            padding: 1em;
+        }
+
+        .container__menuList {
+            display: none;
+            position: absolute;
+            top: 100%;
+            width: 60vw;
+
+            .container__menuList__title,
+            .container__menuList__item {
+                padding: 1em;
+                background-color: var(--white)
+            }
+
+            .container__menuList__title {
+                color: var(--orange);
+                font-weight: 700;
+            }
+
+            .container__menuList__item__link {
+                color: var(--dark-blue);
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+
+        .container__button:checked ~ .container__menuList{
+            display: block;
+        }
+
+        .container__button {
+            display: none;
+        }
+    }
+}

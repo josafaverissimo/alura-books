@@ -1,0 +1,37 @@
+.banner {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 2.5em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+
+    .banner__title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .banner__text {
+        font-weight: 500;
+    }
+
+    .banner__search {
+        background-color: transparent;
+        border: 1px solid var(--white);
+        color: var(--white);
+        border-radius: 24px;
+        padding: 1em;
+        align-self: stretch;
+
+       &::placeholder {
+           font-family: var(--primary-font);
+           font-size: 14px;
+           font-weight: 400;
+           color: var(--white);
+           text-align: center;
+           background: url('../images/Lupa.svg') no-repeat left;
+       }
+    }
+}
