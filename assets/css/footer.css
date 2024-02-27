@@ -5,4 +5,40 @@ hr {
 .footer {
     background-color: var(--white);
     padding: 1em 1em 1.5em 1em;
+
+    .footer__list {
+        display: none;
+    }
+
+    @media screen and (min-width: 1024px) {
+        & {
+            display: flex;
+            justify-content: space-around;
+
+            .footer__title {
+                font-size: 24px;
+            }
+
+            .footer__list {
+                display: flex;
+                flex-direction: column;
+                gap: .5em;
+
+                .footer__list__title {
+                    color: var(--white-gray);
+                }
+
+                .footer__list__item {
+                    display: flex;
+                    align-items: center;
+                    gap: .6em;
+                }
+
+                .footer__list__link {
+                    text-decoration: none;
+                    color: var(--gray);
+                }
+            }
+        }
+    }
 }
