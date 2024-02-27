@@ -16,6 +16,8 @@
     }
 
     .swiper {
+        width: 70%;
+        
         .swiper-pagination {
             position: static;
             margin: .5em 0;
