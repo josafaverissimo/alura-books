@@ -1,5 +1,6 @@
 .carrossel {
     .carrossel__title {
+        align-self: stretch;
         font-family: var(--primary-font);
         font-weight: 700;
         font-size: 18px;
@@ -22,5 +23,32 @@
     .swiper-pagination {
         position: static;
         margin: .5rem 0;
+    }
+
+    @media screen and (min-width: 1024px) {
+        & {
+            .carrossel__title {
+                font-size: 26px;
+            }
+
+            .swiper-pagination {
+                margin: 2em 0 3em 0;
+            }
+
+            .swiper {
+                width: 70%;
+
+                .swiper-button-prev,
+                .swiper-button-next {
+                    display: block;
+                    top: 50%;
+                }
+            }
+
+            .card {
+                margin: 1em auto;
+                width: 60%;
+            }
+        }
     }
 }
