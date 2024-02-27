@@ -6,6 +6,7 @@
 @import './bestSellers.css';
 @import './topics.css';
 @import './contact.css';
+@import './footer.css';
 
 :root {
     --background-color: #EBECEE;
