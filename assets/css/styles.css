@@ -4,6 +4,8 @@
 @import './banner.css';
 @import './carrossel.css';
 @import './bestSellers.css';
+@import './topics.css';
+@import './contact.css';
 
 :root {
     --background-color: #EBECEE;

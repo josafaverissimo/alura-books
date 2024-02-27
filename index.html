@@ -129,7 +129,7 @@
     </section>
 
     <section class="bestSellers">
-        <h2 class="bestSellers__title">Mais vendidos</h2>
+        <h2 class="bestSellers__title">MAIS VENDIDOS</h2>
 
         <div class="swiper">
             <!-- Additional required wrapper -->
@@ -190,18 +190,60 @@
         </div>
     </section>
 
-    <footer>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script>
-            const swiper = new Swiper('.swiper', {
-                slidesPerView: 3,
-                spaceBetween: 10,
-                pagination: {
-                    el: '.swiper-pagination',
-                    type: 'bullets'
-                }
-            })
-        </script>
+    <section class="topics">
+        <h2 class="topics__title">TÓPICOS VISITADOS RECENTEMENTE</h2>
+
+        <ul class="topics__list">
+            <li class="topics__list__item">
+                <a href="#" class="topics__list__item__link">Android</a>
+            </li>
+            <li class="topics__list__item">
+                <a href="#" class="topics__list__item__link">Marketing Digital</a>
+            </li>
+            <li class="topics__list__item">
+                <a href="#" class="topics__list__item__link">Agile</a>
+            </li>
+            <li class="topics__list__item">
+                <a href="#" class="topics__list__item__link">Startups</a>
+            </li>
+            <li class="topics__list__item">
+                <a href="#" class="topics__list__item__link">HTML e CSS</a>
+            </li>
+            <li class="topics__list__item">
+                <a href="#" class="topics__list__item__link">Python</a>
+            </li>
+            <li class="topics__list__item">
+                <a href="#" class="topics__list__item__link">OO</a>
+            </li>
+            <li class="topics__list__item">
+                <a href="#" class="topics__list__item__link">Java</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2 class="contact__title">Fique por dentro das novidades!</h2>
+        <p class="contact__text">Atualizações de e-books, novos livros, promoções e outros.</p>
+
+        <input type="email" placeholder="Cadastre seu e-mail" class="contact__email">
+    </section>
+
+    <hr>
+
+    <footer class="footer">
+        <h2 class="rooter__title">Grupo Alura</h2>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets'
+            }
+        })
+    </script>
 </body>
 </html>
