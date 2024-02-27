@@ -21,6 +21,8 @@
     --black: #000;
     --primary-font: 'Poppins', sans-serif;
     --secondary-font: 'Josefin Sans', sans-serif;
+    --gray: #474646;
+    --white-gray: #858585;
 }
 
 body {
