@@ -10,45 +10,88 @@
     <title>AluraBooks</title>
 </head>
 <body>
-    <header class="cabecalho">
+    <header class="header">
         <div class="container">
             <input type="checkbox" id="menu" class="container__button">
             <label for="menu">
-                <span class="cabecalho__menuHamburger container__image"></span>
+                <span class="header__menuHamburger container__image"></span>
             </label>
-            <ul class="container__menuList">
-                <li class="container__menuList__title">Categorias</li>
-                <li class="container__menuList__item">
-                    <a href="#" class="container__menuList__item__link">
+            <ul class="menuList">
+                <li class="menuList__title">Categorias</li>
+                <li class="menuList__item">
+                    <a href="#" class="menuList__item__link">
                         Programação
                     </a>
                 </li>
-                <li class="container__menuList__item">
-                    <a href="#" class="container__menuList__item__link">
+                <li class="menuList__item">
+                    <a href="#" class="menuList__item__link">
                         Front-end
                     </a>
                 </li>
-                <li class="container__menuList__item">
-                    <a href="#" class="container__menuList__item__link">
+                <li class="menuList__item">
+                    <a href="#" class="menuList__item__link">
                         Infraestrutura
                     </a>
                 </li>
-                <li class="container__menuList__item">
-                    <a href="#" class="container__menuList__item__link">
+                <li class="menuList__item">
+                    <a href="#" class="menuList__item__link">
                         Business
                     </a>
                 </li>
-                <li class="container__menuList__item">
-                    <a href="#" class="container__menuList__item__link">
+                <li class="menuList__item">
+                    <a href="#" class="menuList__item__link">
                         Design & UX
                     </a>
                 </li>
             </ul>
             <img src="./assets/images/Logo.svg" alt="Logo da AluraBooks">
+            <h1 class="container__title">
+                <strong class="container__title--bold">Alura</strong>Books
+            </h1>
         </div>
 
+        <ul class="options">
+            <input type="checkbox" id="optionsMenu" class="options__button">
+            <label for="optionsMenu">
+                <li class="options__item">Categorias</li>
+            </label>
+            <ul class="menuList">
+                <li class="menuList__item">
+                    <a href="#" class="menuList__item__link">
+                        Programação
+                    </a>
+                </li>
+                <li class="menuList__item">
+                    <a href="#" class="menuList__item__link">
+                        Front-end
+                    </a>
+                </li>
+                <li class="menuList__item">
+                    <a href="#" class="menuList__item__link">
+                        Infraestrutura
+                    </a>
+                </li>
+                <li class="menuList__item">
+                    <a href="#" class="menuList__item__link">
+                        Business
+                    </a>
+                </li>
+                <li class="menuList__item">
+                    <a href="#" class="menuList__item__link">
+                        Design & UX
+                    </a>
+                </li>
+            </ul>
+            <li class="options__item">
+                <a href="#" class="options__item__link">Favoritos</a>
+            </li>
+            <li class="options__item">
+                <a href="#" class="options__item__link">Minha estante</a>
+            </li>
+        </ul>
+
         <div class="container">
-            <a href="#"><img src="./assets/images/Favoritos.svg" alt="Meus favoritos" class="container__image"></a>
+            <a href="#"><img src="./assets/images/Favoritos.svg" alt="Meus favoritos" class="container__image container__image--onlyMobile"></a>
             <a href="#"><img src="./assets/images/Compras.svg" alt="Carrinhos de compras" class="container__image"></a>
             <a href="#"><img src="./assets/images/Usuario.svg" alt="Meu perfil" class="container__image"></a>
         </div>
