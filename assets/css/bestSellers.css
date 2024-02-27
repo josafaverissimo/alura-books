@@ -1,0 +1,28 @@
+.bestSellers {
+    .bestSellers__title {
+        background-color: var(--white);
+        color: var(--orange);
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 1em 0 .5em 0;
+    }
+
+    .card {
+        .bestSellers__card__authorImage {
+            width: 160px;
+            height: 166px;
+        }
+    }
+
+    .swiper {
+        .swiper-pagination {
+            position: static;
+            margin: .5em 0;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+        }
+    }
+}
