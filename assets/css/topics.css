@@ -27,4 +27,20 @@
             }
         }
     }
+
+    @media screen and (min-width: 1024px) {
+        & {
+            .topics__title {
+                font-size: 24px;
+            }
+
+            .topics__list {
+                .topics__list__item {
+                    .topics__list__item__link {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
 }
