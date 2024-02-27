@@ -24,5 +24,23 @@
         .swiper-slide img {
             width: 100%;
         }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        & {
+            .bestSellers__title {
+                font-size: 26px;
+            }
+
+            .card {
+                margin: 1em auto;
+                width: 60%;
+            }
+        }
     }
 }
