@@ -41,4 +41,15 @@ hr {
             }
         }
     }
+
+    @media screen and (min-width: 1728px) {
+        & {
+            padding: 3rem 0;
+
+            .footer__list {
+                padding: 1.5rem;
+                border-left: 1px solid var(--white-gray)
+            }
+        }
+    }
 }

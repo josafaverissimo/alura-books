@@ -43,4 +43,10 @@
             }
         }
     }
+
+    @media screen and (min-width: 1728px) {
+        & {
+            padding: 3em 25vw;
+        }
+    }
 }

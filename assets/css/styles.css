@@ -34,3 +34,35 @@ body {
 h1 {
     background-color: #fff;
 }
+
+@media screen and (min-width: 1728px) {
+    .carrossel__container {
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .card {
+        width: 60%;
+
+        .card__description {
+            margin-right: 2rem;
+            .card__description__title {
+                font-size: 32px;
+            }
+
+            .card__description__text {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .swiper {
+        width: 50%;
+    }
+
+    .swiper-pagination {
+        margin: 1em 0;
+    }
+}
