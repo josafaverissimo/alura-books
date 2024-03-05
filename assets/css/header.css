@@ -15,7 +15,15 @@
         .menuList__title,
         .menuList__item {
             padding: 1em;
-            background-color: var(--white)
+            background-color: var(--white);
+
+            &:hover {
+                background-color: var(--dark-blue);
+
+                .menuList__item__link {
+                    color: var(--white);
+                }
+            }
         }
 
         .menuList__title {
@@ -50,6 +58,18 @@
 
         .container__image {
             padding: 1em;
+        }
+
+        .container__label {
+            padding: 2em 1em
+        }
+
+        .container__button:checked ~ .container__label {
+            background-color: var(--dark-blue);
+        }
+
+        .container__button:checked ~ .container__label > .header__menuHamburger {
+            background-image: url("../images/Menu Aberto.svg");
         }
 
         .container__button:checked ~ .menuList{
@@ -110,6 +130,15 @@
 
                 .options__button {
                     display: none;
+                }
+
+                .options__item {
+                    padding: 2em 1em;
+                }
+
+                .options__button:checked ~ .options__label > .options__item {
+                    color: var(--white);
+                    background-color: var(--dark-blue);
                 }
 
                 .options__button:checked ~ .menuList {
